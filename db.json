@@ -1,0 +1,404 @@
+{
+  "movies": [
+    {
+      "id": "2",
+      "title": "The Dark Knight",
+      "genre": "Action",
+      "rating": 9,
+      "review": "Batman faces the Joker in one of the greatest superhero movies ever made.",
+      "image": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Interstellar",
+      "genre": "Adventure",
+      "rating": 8.6,
+      "review": "A visually stunning and emotional journey through space and time.",
+      "image": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+    },
+    {
+      "id": "4",
+      "title": "The Shawshank Redemption",
+      "genre": "Drama",
+      "rating": 9.3,
+      "review": "Hope and friendship endure inside Shawshank prison.",
+      "image": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Forrest Gump",
+      "genre": "Drama",
+      "rating": 8.8,
+      "review": "A heartwarming tale that spans decades and emotions.",
+      "image": "https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Fight Club",
+      "genre": "Thriller",
+      "rating": 8.8,
+      "review": "An unpredictable and thought-provoking psychological thriller.",
+      "image": "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg"
+    },
+    {
+      "id": "7",
+      "title": "The Matrix",
+      "genre": "Sci-Fi",
+      "rating": 8.7,
+      "review": "A hacker discovers the shocking truth about reality.",
+      "image": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Gladiator",
+      "genre": "Action",
+      "rating": 8.5,
+      "review": "A betrayed Roman general seeks revenge against the emperor.",
+      "image": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+    },
+    {
+      "id": "9",
+      "title": "The Godfather",
+      "genre": "Crime",
+      "rating": 9.2,
+      "review": "A cinematic masterpiece about power, family, and loyalty.",
+      "image": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Pulp Fiction",
+      "genre": "Crime",
+      "rating": 8.9,
+      "review": "A stylish and darkly humorous look at crime in Los Angeles.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCqzGSUVlP74iyuFujryxWBYV6yqGirkn7BFHIJXEMzS4gNI-Z2wEKZsW6dLYA9B77BgyPdg&s=10"
+    },
+    {
+      "id": "11",
+      "title": "Avengers: Endgame",
+      "genre": "Action",
+      "rating": 8.4,
+      "review": "The Avengers unite for one last stand against Thanos.",
+      "image": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Avatar",
+      "genre": "Fantasy",
+      "rating": 7.8,
+      "review": "A visual spectacle that immerses viewers in another world.",
+      "image": "https://image.tmdb.org/t/p/w500/6EiRUJpuoeQPghrs3YNktfnqOVh.jpg"
+    },
+    {
+      "id": "13",
+      "title": "Titanic",
+      "genre": "Romance",
+      "rating": 7.9,
+      "review": "A tragic love story aboard the ill-fated RMS Titanic.",
+      "image": "https://image.tmdb.org/t/p/w500/kHXEpyfl6zqn8a6YuozZUujufXf.jpg"
+    },
+    {
+      "id": "14",
+      "title": "The Lion King",
+      "genre": "Animation",
+      "rating": 8.5,
+      "review": "A beautifully animated story about courage, love, and destiny.",
+      "image": "https://image.tmdb.org/t/p/w500/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Joker",
+      "genre": "Drama",
+      "rating": 8.4,
+      "review": "A dark and haunting portrayal of mental illness and society.",
+      "image": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+    },
+    {
+      "id": "16",
+      "title": "Parasite",
+      "genre": "Thriller",
+      "rating": 8.6,
+      "review": "A razor-sharp social satire with masterful storytelling.",
+      "image": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+    },
+    {
+      "id": "17",
+      "title": "The Avengers",
+      "genre": "Action",
+      "rating": 8,
+      "review": "A thrilling superhero team-up that redefined blockbuster cinema.",
+      "image": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+    },
+    {
+      "id": "18",
+      "title": "Spider-Man: No Way Home",
+      "genre": "Action",
+      "rating": 8.3,
+      "review": "Three Spider-Men face villains from across universes.",
+      "image": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+    },
+    {
+      "id": "19",
+      "title": "Black Panther",
+      "genre": "Action",
+      "rating": 7.3,
+      "review": "The king of Wakanda must defend his nation and throne.",
+      "image": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
+    },
+    {
+      "id": "20",
+      "title": "Doctor Strange",
+      "genre": "Fantasy",
+      "rating": 7.5,
+      "review": "A surgeon discovers magic and alternate dimensions.",
+      "image": "https://image.tmdb.org/t/p/w500/4PiiNGXj1KENTmCBHGreYJv1nCB.jpg"
+    },
+    {
+      "id": "21",
+      "title": "Iron Man",
+      "genre": "Action",
+      "rating": 7.9,
+      "review": "A billionaire builds a suit of armor and becomes a hero.",
+      "image": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg"
+    },
+    {
+      "id": "22",
+      "title": "Captain America: Civil War",
+      "genre": "Action",
+      "rating": 7.8,
+      "review": "A superhero showdown filled with emotional depth and great action.",
+      "image": "https://image.tmdb.org/t/p/w500/5X6HfZc3x4Ynq2kHkuYc4eYv0iT.jpg"
+    },
+    {
+      "id": "23",
+      "title": "Guardians of the Galaxy",
+      "genre": "Adventure",
+      "rating": 8,
+      "review": "A band of misfits unite to save the galaxy.",
+      "image": "https://image.tmdb.org/t/p/w500/y31QB9kn3XSudA15tV7UWQ9XLuW.jpg"
+    },
+    {
+      "id": "24",
+      "title": "The Batman",
+      "genre": "Action",
+      "rating": 8.2,
+      "review": "A dark and gritty take on the Caped Crusader’s story.",
+      "image": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+    },
+    {
+      "id": "25",
+      "title": "Dune",
+      "genre": "Sci-Fi",
+      "rating": 8,
+      "review": "A visually majestic adaptation of the classic novel.",
+      "image": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"
+    },
+    {
+      "id": "26",
+      "title": "Oppenheimer",
+      "genre": "Biography",
+      "rating": 8.8,
+      "review": "A masterfully directed and acted biographical epic.",
+      "image": "https://image.tmdb.org/t/p/w500/cIu0vG3r1wKj7d8gR8e0hU6v2c7.jpg"
+    },
+    {
+      "id": "27",
+      "title": "Barbie",
+      "genre": "Comedy",
+      "rating": 7.3,
+      "review": "A colorful and satirical take on self-discovery.",
+      "image": "https://image.tmdb.org/t/p/w500/8n6i3aQxQ3aVJ6GmC3u6S3KQ1qB.jpg"
+    },
+    {
+      "id": "28",
+      "title": "The Wolf of Wall Street",
+      "genre": "Biography",
+      "rating": 8.2,
+      "review": "A wild and energetic portrayal of greed and excess.",
+      "image": "https://image.tmdb.org/t/p/w500/pWHf4khO8ptHQGosG7fk5oviUHV.jpg"
+    },
+    {
+      "id": "29",
+      "title": "Shutter Island",
+      "genre": "Thriller",
+      "rating": 8.2,
+      "review": "A gripping psychological mystery with a shocking twist.",
+      "image": "https://image.tmdb.org/t/p/w500/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg"
+    },
+    {
+      "id": "30",
+      "title": "Inglourious Basterds",
+      "genre": "War",
+      "rating": 8.3,
+      "review": "A bold and brilliant rewrite of history from Tarantino.",
+      "image": "https://image.tmdb.org/t/p/w500/7h4x3yG7cQ7kQ0d5IYqCrg4f2g0.jpg"
+    },
+    {
+      "id": "31",
+      "title": "The Social Network",
+      "genre": "Drama",
+      "rating": 7.7,
+      "review": "A fast-paced and smartly written origin story of Facebook.",
+      "image": "https://image.tmdb.org/t/p/w500/5sO0RpxyQkVh4G6e3Pp9t0C0rzU.jpg"
+    },
+    {
+      "id": "32",
+      "title": "The Prestige",
+      "genre": "Mystery",
+      "rating": 8.5,
+      "review": "A mesmerizing rivalry between two illusionists.",
+      "image": "https://image.tmdb.org/t/p/w500/5MXyQfz8xUP3dIFPTubhTsbFY6N.jpg"
+    },
+    {
+      "id": "33",
+      "title": "The Revenant",
+      "genre": "Adventure",
+      "rating": 8,
+      "review": "A brutal and breathtaking tale of survival and revenge.",
+      "image": "https://image.tmdb.org/t/p/w500/4g3r7F6YV0kGQ6aF4xXl9I9g0gP.jpg"
+    },
+    {
+      "id": "34",
+      "title": "Whiplash",
+      "genre": "Drama",
+      "rating": 8.5,
+      "review": "An intense exploration of ambition and perfection.",
+      "image": "https://image.tmdb.org/t/p/w500/oNl5p9QJwQY8J0M6p3r0y8wPq4M.jpg"
+    },
+    {
+      "id": "35",
+      "title": "The Grand Budapest Hotel",
+      "genre": "Comedy",
+      "rating": 8.1,
+      "review": "A visually delightful and quirky tale from Wes Anderson.",
+      "image": "https://image.tmdb.org/t/p/w500/nXf7r6FfJ6c4pYQjXlZt2G8qDGF.jpg"
+    },
+    {
+      "id": "36",
+      "title": "Jaws",
+      "genre": "Thriller",
+      "rating": 8.1,
+      "review": "The classic shark movie that started the blockbuster era.",
+      "image": "https://image.tmdb.org/t/p/w500/2l2n1w2dE0K2uZ3Z9bKQ9n7n2p3.jpg"
+    },
+    {
+      "id": "37",
+      "title": "The Silence of the Lambs",
+      "genre": "Horror",
+      "rating": 8.6,
+      "review": "A chilling masterpiece of psychological horror.",
+      "image": "https://image.tmdb.org/t/p/w500/rplLJ2hPcOQmkFhTqUte0MkEaO2.jpg"
+    },
+    {
+      "id": "38",
+      "title": "Se7en",
+      "genre": "Thriller",
+      "rating": 8.6,
+      "review": "A dark, disturbing detective story with a haunting finale.",
+      "image": "https://image.tmdb.org/t/p/w500/69Sns8WoET6CfaYlIkHbla4l7nC.jpg"
+    },
+    {
+      "id": "39",
+      "title": "The Departed",
+      "genre": "Crime",
+      "rating": 8.5,
+      "review": "An intense and brilliantly acted undercover thriller.",
+      "image": "https://image.tmdb.org/t/p/w500/7o3x2kS5jm1b6E0YqJ1n8fT2u4K.jpg"
+    },
+    {
+      "id": "40",
+      "title": "Goodfellas",
+      "genre": "Crime",
+      "rating": 8.7,
+      "review": "A gritty and unforgettable story about life in the mob.",
+      "image": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg"
+    },
+    {
+      "id": "41",
+      "title": "The Irishman",
+      "genre": "Crime",
+      "rating": 7.8,
+      "review": "A reflective mob epic from Martin Scorsese.",
+      "image": "https://image.tmdb.org/t/p/w500/2k6xYQ0gV0Y8yVQ1Xh8a4r1HnP7.jpg"
+    },
+    {
+      "id": "42",
+      "title": "Django Unchained",
+      "genre": "Western",
+      "rating": 8.4,
+      "review": "A thrilling, violent, and darkly funny western revenge tale.",
+      "image": "https://image.tmdb.org/t/p/w500/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg"
+    },
+    {
+      "id": "43",
+      "title": "Dunkirk",
+      "genre": "War",
+      "rating": 7.9,
+      "review": "A gripping, immersive WWII survival story.",
+      "image": "https://image.tmdb.org/t/p/w500/ebSnODDg9lbsMIaWg2uAbjn7TO5.jpg"
+    },
+    {
+      "id": "44",
+      "title": "Tenet",
+      "genre": "Sci-Fi",
+      "rating": 7.4,
+      "review": "A complex, time-bending spy thriller from Christopher Nolan.",
+      "image": "https://image.tmdb.org/t/p/w500/k68nPLbIST6NP96JmTxmZijEvCA.jpg"
+    },
+    {
+      "id": "45",
+      "title": "The Wolf of Wall Street",
+      "genre": "Biography",
+      "rating": 8.2,
+      "review": "A wild and energetic portrayal of greed and excess.",
+      "image": "https://image.tmdb.org/t/p/w500/pWHf4khO8ptHQGosG7fk5oviUHV.jpg"
+    },
+    {
+      "id": "46",
+      "title": "The Social Network",
+      "genre": "Drama",
+      "rating": 7.7,
+      "review": "A fast-paced and smartly written origin story of Facebook.",
+      "image": "https://image.tmdb.org/t/p/w500/5sO0RpxyQkVh4G6e3Pp9t0C0rzU.jpg"
+    },
+    {
+      "id": "47",
+      "title": "Mad Max: Fury Road",
+      "genre": "Action",
+      "rating": 8.1,
+      "review": "A relentless, high-octane chase across a post-apocalyptic wasteland.",
+      "image": "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg"
+    },
+    {
+      "id": "48",
+      "title": "La La Land",
+      "genre": "Musical",
+      "rating": 8,
+      "review": "A romantic musical about dreams and sacrifice in LA.",
+      "image": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg"
+    },
+    {
+      "id": "49",
+      "title": "The Hunger Games",
+      "genre": "Adventure",
+      "rating": 7.2,
+      "review": "A dystopian saga of courage and rebellion.",
+      "image": "https://image.tmdb.org/t/p/w500/ixz2BfI2u0p9gTEkmbU2xk3Cn5U.jpg"
+    },
+    {
+      "id": "50",
+      "title": "The Maze Runner",
+      "genre": "Action",
+      "rating": 6.8,
+      "review": "A gripping young adult sci-fi thriller.",
+      "image": "https://image.tmdb.org/t/p/w500/fFTQYj3YQp5dE0e3LPUlXb3mVyc.jpg"
+    },
+    {
+      "id": "4ac3",
+      "title": "wolf of wall street",
+      "genre": "scam comedy",
+      "rating": "9",
+      "review": "dsdsfdvsfs",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg"
+    }
+  ]
+}
