@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 // ✅ Add these imports
 import PublicMovies from "./pages/PublicMovies";
 import Movies from "./pages/Movies"; // CRUD page
+import SearchResults from "./pages/SearchResults";
 
 const App = () => {
   return (
@@ -47,6 +48,7 @@ const App = () => {
             {/* ✅ New pages */}
             <Route path="/public" element={<PublicMovies />} />
             <Route path="/crud" element={<Movies />} />
+            <Route path="/search" element={<SearchResults />} />
 
             {/* ✅ 404 */}
             <Route path="*" element={<NotFound />} />

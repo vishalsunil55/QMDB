@@ -1,11 +1,25 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 export default function NavBar() {
+  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
   const linkClass =
     "text-amber-400/80 hover:text-amber-400 transition font-medium";
   const activeClass =
     "text-amber-400 font-semibold border-b-2 border-amber-400 pb-0.5";
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+      setSearchQuery("");
+    }
+  };
+
+  const handleInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
 
   return (
     <nav className="bg-gray-950 text-amber-400 px-4 py-2 sticky top-0 z-50 border-b border-gray-800">
@@ -63,13 +77,15 @@ export default function NavBar() {
         </div>
 
         {/* ✅ Search Bar */}
-        <div className="flex-1">
+        <form onSubmit={handleSearch} className="flex-1">
           <input
             type="text"
             placeholder="Search movies..."
+            value={searchQuery}
+            onChange={handleInputChange}
             className="w-full rounded-md px-3 py-2 bg-gray-900 text-gray-100 placeholder:text-gray-500 border border-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-400/40"
           />
-        </div>
+        </form>
 
         {/* ✅ Removed Latest Movies completely */}
       </div>
