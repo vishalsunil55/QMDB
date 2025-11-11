@@ -9,10 +9,10 @@ const Movies = () => {
   const [image, setImage] = useState("");
   const [editingMovie, setEditingMovie] = useState(null);
 
-  const formRef = useRef(null);
-  const API_URL = "http://localhost:5000/movies";
+  const formRef = useRef(null); // ✅ Reference for the form
+  const API_URL = "http://localhost:5000/movies"; // JSON Server URL
 
-  // ✅ Fetch movies
+  // Fetch movies
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
@@ -20,7 +20,7 @@ const Movies = () => {
       .catch((err) => console.error("Error fetching movies:", err));
   }, []);
 
-  // ✅ Add Movie
+  // Add new movie
   const handleAddMovie = (e) => {
     e.preventDefault();
     if (!title || !genre || !rating || !review || !image)
@@ -40,15 +40,15 @@ const Movies = () => {
       });
   };
 
-  // ✅ Delete Movie
+  // Delete movie
   const handleDelete = (id) => {
-    if (window.confirm("Delete this movie?")) {
+    if (window.confirm("Are you sure you want to delete this movie?")) {
       fetch(`${API_URL}/${id}`, { method: "DELETE" })
         .then(() => setMovies(movies.filter((movie) => movie.id !== id)));
     }
   };
 
-  // ✅ Edit Movie
+  // Edit movie
   const handleEdit = (movie) => {
     setEditingMovie(movie);
     setTitle(movie.title);
@@ -57,14 +57,15 @@ const Movies = () => {
     setReview(movie.review);
     setImage(movie.image);
 
+    //  Scroll smoothly to the form when editing
     formRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // ✅ Update Movie
+  // Update movie
   const handleUpdate = (e) => {
     e.preventDefault();
     if (!title || !genre || !rating || !review || !image)
-      return alert("All fields required");
+      return alert("Please fill all fields");
 
     const updatedMovie = { ...editingMovie, title, genre, rating, review, image };
 
@@ -80,7 +81,6 @@ const Movies = () => {
       });
   };
 
-  // ✅ Reset form
   const resetForm = () => {
     setTitle("");
     setGenre("");
@@ -91,22 +91,40 @@ const Movies = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto py-10 px-4">
-      <h1 className="text-center text-yellow-400 text-3xl font-bold mb-8">
-        Movie Review Hub
-      </h1>
+    <div className="movies-container">
+      <h1 className="title">Movie Review Hub</h1>
 
-      {/* ✅ Add/Edit Form */}
-      <form
-        ref={formRef}
-        className="movie-form"
-        onSubmit={editingMovie ? handleUpdate : handleAddMovie}
-      >
-        <input type="text" placeholder="Movie Title" value={title} onChange={(e) => setTitle(e.target.value)} />
-        <input type="text" placeholder="Genre" value={genre} onChange={(e) => setGenre(e.target.value)} />
-        <input type="number" placeholder="Rating (1-10)" value={rating} onChange={(e) => setRating(e.target.value)} />
-        <input type="text" placeholder="Poster Image URL" value={image} onChange={(e) => setImage(e.target.value)} />
-        <textarea placeholder="Write a short review..." value={review} onChange={(e) => setReview(e.target.value)}></textarea>
+      {/*  Added ref here */}
+      <form ref={formRef} className="movie-form" onSubmit={editingMovie ? handleUpdate : handleAddMovie}>
+        <input
+          type="text"
+          placeholder="Movie Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Genre"
+          value={genre}
+          onChange={(e) => setGenre(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Rating (1-10)"
+          value={rating}
+          onChange={(e) => setRating(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Image URL (poster link)"
+          value={image}
+          onChange={(e) => setImage(e.target.value)}
+        />
+        <textarea
+          placeholder="Write a short review..."
+          value={review}
+          onChange={(e) => setReview(e.target.value)}
+        ></textarea>
 
         <div className="button-group">
           <button type="submit" className="btn-primary">
@@ -120,7 +138,6 @@ const Movies = () => {
         </div>
       </form>
 
-      {/* ✅ Movie Grid */}
       <div className="movie-grid">
         {movies.length === 0 ? (
           <p className="empty-text">No movies found</p>
@@ -136,7 +153,7 @@ const Movies = () => {
               <div className="movie-info">
                 <div className="movie-header">
                   <h2>{movie.title}</h2>
-                  <span className="rating">{movie.rating}/10</span>
+                  <span className="rating"> {movie.rating}/10</span>
                 </div>
                 <p className="genre">{movie.genre}</p>
                 <p className="review">{movie.review}</p>
@@ -154,8 +171,30 @@ const Movies = () => {
         )}
       </div>
 
-      {/* ✅ Keep your existing CSS */}
+      {/* Your existing IMDb-style CSS (no change) */}
       <style jsx>{`
+        body {
+          background-color: #121212;
+          font-family: "Poppins", sans-serif;
+          color: #fff;
+        }
+
+        .movies-container {
+          max-width: 1000px;
+          margin: 40px auto;
+          padding: 20px;
+          background-color: #1a1a1a;
+          border-radius: 10px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .title {
+          text-align: center;
+          color: #f5c518;
+          font-size: 2rem;
+          margin-bottom: 25px;
+        }
+
         .movie-form {
           display: flex;
           flex-direction: column;
@@ -165,6 +204,7 @@ const Movies = () => {
           border-radius: 10px;
           margin-bottom: 30px;
         }
+
         input,
         textarea {
           padding: 10px;
@@ -174,27 +214,104 @@ const Movies = () => {
           color: #fff;
           font-size: 1rem;
         }
+
         .button-group {
           display: flex;
           gap: 10px;
         }
+
         .btn-primary {
           background-color: #f5c518;
           color: #000;
           font-weight: bold;
           padding: 10px 16px;
+          border: none;
           border-radius: 6px;
+          cursor: pointer;
         }
+
         .movie-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
           gap: 20px;
         }
+
         .movie-card {
           background: #222;
           border-radius: 10px;
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-          transition: 0.2s;
+          transition: transform 0.2s ease-in-out;
+          overflow: hidden;
+        }
+
+        .movie-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .poster {
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+          border-bottom: 3px solid #f5c518;
+        }
+
+        .movie-info {
+          padding: 15px;
+        }
+
+        .movie-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+
+        .movie-header h2 {
+          font-size: 1.2rem;
+          color: #f5c518;
+        }
+
+        .rating {
+          background: #333;
+          padding: 5px 10px;
+          border-radius: 6px;
+          color: #f5c518;
+          font-weight: bold;
+        }
+
+        .genre {
+          font-size: 0.9rem;
+          color: #ccc;
+          margin-bottom: 10px;
+        }
+
+        .review {
+          font-size: 0.95rem;
+          color: #eee;
+          margin-bottom: 15px;
+        }
+
+        .actions {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .edit-btn {
+          background-color: #007bff;
+          border: none;
+          color: white;
+          padding: 6px 12px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .delete-btn {
+          background-color: #dc3545;
+          border: none;
+          color: white;
+          padding: 6px 12px;
+          border-radius: 5px;
+          cursor: pointer;
         }
       `}</style>
     </div>
